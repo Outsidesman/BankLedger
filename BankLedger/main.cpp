@@ -77,10 +77,8 @@ void process_account(Account& newAccount){
             std::cout << "Error reading account details.\n";
             exit(1);
         }
-        //newAccount.isNewAccount = false;
     } else {
         std::cout << "Welcome, " << newAccount.get_name() << "\n";
-        //newAccount.isNewAccount = true;
     }
 }
 
