@@ -33,7 +33,6 @@ class Account {
         void set_balance(double balance);
         std::string get_name();
         double get_balance();
-        //bool isNewAccount;
 
         void add_transaction(const std::string timestamp, int transaction_type, double amount);
 
