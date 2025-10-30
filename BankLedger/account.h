@@ -14,27 +14,22 @@ void clear_screen();
 
 class Account {
     public:
-        // Constructor
         Account();
     
-        // Show account details/history
         void display_details();
         void get_history();
 
-        // Write account history to file
-        void writeout_history();
-
-        // Withdrawl/deposit
         void make_withdrawl(double withdrawl_amount);
         void make_deposit(double deposit_amount);
 
-        // Name/balance
         void set_name(std::string name);
         void set_balance(double balance);
         std::string get_name();
         double get_balance();
 
         void add_transaction(const std::string timestamp, int transaction_type, double amount);
+
+        void writeout_history();
 
     private:
         std::string owner_name;
